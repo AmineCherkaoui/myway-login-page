@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Se connecter</title>
+  </head>
+  <body>
+    <section id="connecter" style="width: 500px">
+      <div>
+        <h1>Créer mon compte</h1>
+      </div>
+      <form action="#">
+        <label for="civilite">Civilité</label>
+        <select name="civilite" id="civilite" required>
+          <option value="" selected disabled></option>
+          <option value="Madame">Madame</option>
+          <option value="Monsieur">Monsieur</option>
+        </select>
+        <label for="fname">Nom</label>
+        <input type="text" name="fname" id="fname" required />
+        <label for="lname">Prénom</label>
+        <input type="text" name="lname" id="lname" required />
+        <label for="birthday">Date de naissance</label>
+        <input type="date" name="birthday" id="birthday" required />
+        <label for="tel">Numéro de téléphone</label>
+        <input
+          type="tel"
+          name="tel"
+          id="tel"
+          pattern="[0-9]{10}"
+          placeholder="0#########"
+          required />
+        <label for="region">Région</label>
+        <select name="region" id="region" required>
+          <option value="" selected disabled>Choisir une région</option>
+          <option value="1">Rabat-Salé-Kénitra</option>
+          <option value="2">Casablanca-Settat</option>
+          <option value="3">Tanger-Tétouan-Al Hoceima</option>
+        </select>
+        <label for="ville">Ville</label>
+        <select name="ville" id="ville" required>
+          <option value="" selected disabled>Choisir une ville</option>
+          <option value="1">Rabat</option>
+          <option value="2">Casablanca</option>
+          <option value="3">Tanger</option>
+          <option value="4">Tétouan</option>
+          <option value="5">Al Hoceima</option>
+          <option value="6">Salé</option>
+          <option value="7">Kénitra</option>
+        </select>
+        <input type="submit" value="Continuer" />
+      </form>
+      <div class="message">
+        <p>Déjà inscrit ?</p>
+        <a href="./index.html">Se connecter</a>
+      </div>
+    </section>
+  </body>
+</html>

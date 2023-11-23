@@ -1,0 +1,124 @@
+*,
+::after,
+::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: #6d4aff;
+  color: white;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: Tahoma, Helvetica, sans-serif;
+  margin: 64px 18px;
+}
+
+#connecter {
+  border-bottom: 10px solid #6d4aff;
+  border-radius: 7px;
+  padding: 24px 38px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  text-align: center;
+  font-size: 14px;
+}
+
+h1 {
+  padding: 24px 12px;
+  color: #372580;
+  border-bottom: 1px solid #bdbdbd;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+label {
+  display: block;
+  margin-top: 24px;
+  color: #76728b;
+
+  text-align: left;
+}
+
+input:not(input[type="submit"]),
+select {
+  margin-top: 12px;
+  padding: 14px 18px;
+  border-radius: 100px;
+  border: 2px solid #372580;
+  background-color: white;
+  font-size: 16px;
+  font-weight: bold;
+  color: #372580;
+  display: block;
+  width: 100%;
+  caret-color: #6d4aff;
+  transition: all ease-out 0.3s;
+}
+input:not(input[type="submit"]):focus,
+select:focus {
+  outline: none;
+  color: #6d4aff;
+  border-color: #6d4aff;
+  background-color: #f7f5ff;
+  box-shadow: 0px 0px 2px #6e4aff50;
+}
+
+a:link {
+  text-decoration: none;
+  color: #6d4aff;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+a:visited {
+  color: #6d4aff;
+}
+
+input[type="submit"] {
+  margin-top: 48px;
+  border-radius: 100px;
+  padding: 12px 32px;
+  font-size: 14px;
+  border: none;
+  background-color: #6d4aff;
+  color: #f7f5ff;
+  font-weight: bold;
+  transition: all ease-out 0.4s;
+}
+
+input[type="submit"]:hover {
+  color: #6d4aff;
+  outline: 1px solid #6d4aff;
+  transform: translate(0, -20%);
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.1);
+  background-color: #f7f5ff;
+}
+
+.message {
+  margin-top: 64px;
+}
+
+.message p {
+  color: #372580;
+  font-weight: 700;
+}
+.message a {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.rec {
+  font-size: 16px;
+  text-align: left;
+  color: #372580;
+  font-weight: 700;
+  margin: 24px 0;
+}
